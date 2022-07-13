@@ -1,15 +1,19 @@
-<template >
+<!--
+Author: Nishant Mohan Wavhal
+Created Date: 7/11/2022
+Lightning Web Component for Product Info
+-->
+<template>
     <lightning-card>
         <h3 slot="title">
             <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
             Cost Per Service
         </h3>
-        <template for:each={mdtwrap} for:item="mdt">
-            <div key={mdt.cost_calmonth.id}>
-            <div class="slds-m-medium slds-m-bottom_x-small">
+     <template for:each={mdtwrap} for:item="mdt">
+     <div key={mdt.cost_calmonth.id}>
+        <div class="slds-m-medium slds-m-bottom_x-small">
             <div class="slds-p-around_medium lgc-bg">
                <lightning-input type="text" label="Home Country"  value={mdt.homecountry} disabled></lightning-input>
- 
             </div>
         </div>
         <div class="slds-m-medium slds-m-bottom_x-small">
@@ -32,9 +36,7 @@
                 <lightning-input type="text" label="Card Replacement Cost"  value={mdt.atm_fee.Cost__c} disabled></lightning-input>
             </div>
         </div>
-
     </div>
-        </template>
-        
+    </template>        
     </lightning-card>
 </template>

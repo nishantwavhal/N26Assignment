@@ -1,3 +1,9 @@
+/*
+Author: Nishant Mohan Wavhal
+Aura Enabled Created Date: 7/11/2022
+Metadata Wrapper Class 
+*/
+
 global class MDT_ObjectWrapper{
        @AuraEnabled
        global String homecountry;

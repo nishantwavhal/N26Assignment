@@ -1,0 +1,40 @@
+<template >
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Cost Per Service
+        </h3>
+        <template for:each={mdtwrap} for:item="mdt">
+            <div key={mdt.cost_calmonth.id}>
+            <div class="slds-m-medium slds-m-bottom_x-small">
+            <div class="slds-p-around_medium lgc-bg">
+               <lightning-input type="text" label="Home Country"  value={mdt.homecountry} disabled></lightning-input>
+ 
+            </div>
+        </div>
+        <div class="slds-m-medium slds-m-bottom_x-small">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Product"  value={mdt.product} disabled ></lightning-input>
+            </div>
+        </div>
+        <div class="slds-m-medium slds-m-bottom_x-small">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Cost per Calendar Month"  value={mdt.cost_calmonth.Cost__c}  disabled></lightning-input>
+            </div>
+        </div>
+        <div class="slds-m-medium slds-m-bottom_x-small">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="ATM Fee in other currencies"  value={mdt.cardreplace_cost.Cost__c} disabled></lightning-input>
+            </div>
+        </div>
+        <div class="slds-m-medium slds-m-bottom_x-small">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Card Replacement Cost"  value={mdt.atm_fee.Cost__c} disabled></lightning-input>
+            </div>
+        </div>
+
+    </div>
+        </template>
+        
+    </lightning-card>
+</template>

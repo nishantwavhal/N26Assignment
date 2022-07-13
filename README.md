@@ -24,21 +24,6 @@ record in Salesforce.
 Design an API that would be able to return the data for a contact based on the table
 below.
 
-Cost per Calendar Month DE FR ES IT UK
-Standard € 0 € 0 € 0 € 0 £ 0
-Black € 9,90 € 9,90 € 9,90 € 9,90 N/a
-Metal € 16,90 € 16,90 € 16,90 € 16,90 N/a
-
-ATM Fee in other currencies DE FR ES IT UK
-Standard 1.7% 1.7% 1.7% 1.7% 1.7%
-Black Free Free Free Free Free
-Metal Free Free Free Free Free
-
-Card Replacement Cost DE FR ES IT UK
-Standard € 6 € 6 € 6 € 6 £ 6
-Black € 6 € 6 € 6 € 6 £ 6
-Metal € 45 € 45 € 45 € 45 £ 45
-
 ● Please provide your solutions in a GitHub repository
 ● Write meaningful tests.
 ● Comment where appropriate.

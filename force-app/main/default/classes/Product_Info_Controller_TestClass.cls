@@ -46,7 +46,7 @@ public class Product_Info_Controller_TestClass {
        Case c =[select id from Case limit 1];
 
         Test.startTest();
-         MDT_ObjectWrapper mwrap=Product_Info_Controller.cost_per_Services(c.id);
+         List<MDT_ObjectWrapper> mwrap=Product_Info_Controller.cost_per_Services(c.id);
         Test.stopTest();
  
 }
@@ -56,7 +56,7 @@ public class Product_Info_Controller_TestClass {
        List<Case> cList =[select id from Case];
 
         Test.startTest();
-         MDT_ObjectWrapper mwrap=Product_Info_Controller.cost_per_Services(cList[1].id);
+         List<MDT_ObjectWrapper> mwrap=Product_Info_Controller.cost_per_Services(cList[1].id);
         Test.stopTest();
  
 }
@@ -67,7 +67,7 @@ public class Product_Info_Controller_TestClass {
        List<Case> cList =[select id from Case];
 
         Test.startTest();
-         MDT_ObjectWrapper mwrap=Product_Info_Controller.cost_per_Services(cList[2].id);
+         List<MDT_ObjectWrapper> mwrap=Product_Info_Controller.cost_per_Services(cList[2].id);
         Test.stopTest();
  
 }
@@ -75,7 +75,7 @@ public class Product_Info_Controller_TestClass {
   @isTest  
  public static void getProductinfoUUIDtest4() {
         Test.startTest();
-         MDT_ObjectWrapper mwrap=Product_Info_Controller.cost_per_Services('5007Q00000C3Ta9QAF');
+         List<MDT_ObjectWrapper> mwrap=Product_Info_Controller.cost_per_Services('5007Q00000C3Ta9QAF');
         Test.stopTest();
  
 }

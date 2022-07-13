@@ -14,11 +14,11 @@ global class Product_Info_Service {
      
      String contactUUID= req.requestURI.substring(req.requestURI.lastIndexOf('/') + 1);
 	 
-     MDT_ObjectWrapper mdtwrapper;
+     MDT_ObjectWrapper mdtwrapper=null;
      
-     Cost_per_Calendar_Month__mdt cost_calmonth= new Cost_per_Calendar_Month__mdt();
-     Card_Replacement_Cost__mdt cardreplace_cost = new Card_Replacement_Cost__mdt();
-     ATM_Fee_in_other_currencies__mdt atm_fee = new ATM_Fee_in_other_currencies__mdt();
+     Cost_per_Calendar_Month__mdt cost_calmonth= null;
+     Card_Replacement_Cost__mdt cardreplace_cost = null;
+     ATM_Fee_in_other_currencies__mdt atm_fee = null;
         
      String homecountry;
      String product;

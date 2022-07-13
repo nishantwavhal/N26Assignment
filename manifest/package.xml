@@ -32,5 +32,20 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>Card_Replacement_Cost__mdt</members>
+        <members>Cost_per_Calendar_Month__mdt</members>
+        <members>ATM_Fee_in_other_currencies__mdt</members>
+        <name>CustomObject</name>
+    </types>
+        <types>
+        <members>Contact.Home_Country__c</members>
+        <members>Contact.Product__c</members>
+        <name>CustomField</name>
+    </types>
+   <types>
+        <members>*</​members>
+        <name>CustomMetadata</name>
+    </types>
     <version>55.0</version>
 </Package>
